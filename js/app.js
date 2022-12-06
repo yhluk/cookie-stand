@@ -13,8 +13,8 @@ let seattle = {
   name: 'Seattle',
   minCustomer: 23,
   maxCustomer: 65,
-  avgCookieBought: 6.3,
-  getCookiesBought: function(){
+  avgCookieSales: 6.3,
+  getCookiesSALES: function(){
     let custPerH = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
     let total
   }
@@ -24,7 +24,7 @@ let tokyo = {
   name: 'Tokyo',
   minCustomer: 3,
   maxCustomer: 24,
-  avgCookieBought: 1.2,
+  avgCookieSales: 1.2,
   cookiesBought: [], 
 };
 
@@ -32,7 +32,7 @@ let dubai = {
   name: 'Dubai',
   minCustomer: 11,
   maxCustomer: 38,
-  avgCookieBought: 3.7,
+  avgCookieSales: 3.7,
   cookiesBought: [], 
 };
 
@@ -41,7 +41,7 @@ let paris = {
   name: 'Paris',
   minCustomer: 20,
   maxCustomer: 38,
-  avgCookieBought: 2.3,
+  avgCookieSales: 2.3,
   cookiesBought: [], 
 };
 
@@ -50,7 +50,7 @@ let lima = {
   name: 'Lima',
   minCustomer: 2,
   maxCustomer: 16,
-  avgCookieBought: 4.6,
+  avgCookieSales: 4.6,
   cookiesBought: [], 
 };
 
