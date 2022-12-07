@@ -1,0 +1,17 @@
+header {
+  font-weight: bold;
+  font-size: 1%;
+  background-color: salmon;
+  padding: 3rem;
+}
+
+h1 {
+  margin: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  margin: auto;
+}
