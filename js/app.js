@@ -46,6 +46,16 @@ City.prototype.cookieSales = function(){
 //     }
 //   },
 City.prototype.render = function () {
+
+let tableElement = document.createElement('table');
+storeSales.appendChild(tableElement);
+
+let row = document.createElement('tr');
+  tableElem.appendChild(row);
+
+
+
+};
   let ul = document.createElement('ul');
   storeSales.appendChild(ul);
   ul.innerText = `${this.name}`;
@@ -59,7 +69,7 @@ City.prototype.render = function () {
   ul.appendChild(li);
   li.innerText = `Total: ${Math.floor(this.total)}`;
   // }
-};
+}
 
 
 
