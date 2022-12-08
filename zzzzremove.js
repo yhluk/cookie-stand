@@ -85,38 +85,3 @@ function renderAll() {
 
 renderAll();
 
-
-
-
-// let tokyo = {
-//   name: 'Tokyo',
-//   minCustomer: 3,
-//   maxCustomer: 24,
-//   avgCookieSales: 1.2,
-//   cookiesSale: [],
-// };
-
-// let dubai = {
-//   name: 'Dubai',
-//   minCustomer: 11,
-//   maxCustomer: 38,
-//   avgCookieSales: 3.7,
-//   cookiesSale: [],
-// };
-
-
-// let paris = {
-//   name: 'Paris',
-//   minCustomer: 20,
-//   maxCustomer: 38,
-//   avgCookieSales: 2.3,
-//   cookiesSale: [],
-// };
-
-
-// let lima = {
-//   name: 'Lima',
-//   minCustomer: 2,
-//   maxCustomer: 16,
-//   avgCookieSales: 4.6,
-//   cookiesSale: [],
