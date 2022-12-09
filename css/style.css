@@ -1,18 +1,45 @@
-body {
+html {
+  background-color: rgb(207, 189, 192);
+
+}body {
   font-family: Arial, sans-serif;
   padding: 4px;
   text-align: center;
+  background-color: rgb(207, 189, 192);
 }
 
 h1 {
   text-align: center;
   font-weight: normal;
-  font-size: larger;
+  font-size: xxx-large;
   margin: auto;
+  float: left;
+  padding: 50px;}
+
+  main {
+    /* width: 960px; */
+    margin: auto;
+    line-height: 1.6;
+    font-size: large;
+    font-family: 'Petit Formal Script', cursive;
+
+  }
+  
+
+header{
+  background-color: #4990ac8c;
+  /* background-image: url('img/salmon.png'); */
+  color: rgb(30, 102, 10);
+  text-shadow: 5px 5px 5px  rgb(37, 142, 194);
+  text-align: left;
+  /* text-size-adjust: 100; */
+  /* font-size: x-large; */
+  height: 200px;
+  font-family: cursive;
 }
 
 nav {
-  background: #f0f0f0;
+  background: salmon;
   border: 1px solid #ccc;
   border-right: none;
   width: 100%;
@@ -22,16 +49,28 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
+  border: 10px solid rgb(255, 0, 0);
 }
 
 nav ul li {
   list-style: none;
   text-align: center;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #ccc;
+  font-size: large;
+  }
+
+
+nav ul li:hover {
+  background-color: rgb(255, 0, 0);
+  img
+
+
+  
+  /* border-left: 1px solid #fff;
+  border-right: 1px solid #ccc; */
 }
-
-
+/* nav ul li:hover {
+  background-color: green;
+ */
 
 
 nav ul li a {
@@ -44,11 +83,13 @@ nav ul li a {
 nav {
   display: table;
   table-layout: fixed;
+  
 }
 
 ul {
   display: flex;
   flex-direction: row;
+
 }
 
 ul li {
@@ -56,13 +97,79 @@ ul li {
 }
 
 
-#topbar{
+#newCityAdd{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  flex-direction: column;
+  width: 45%;
+  }
+
+legend{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 20px 0px;
+  color: rgb(51, 30, 210);
+}
+
+form {
+  border: solid 3px hsl(0, 0%, 1%);
+  background-color: hsl(329, 69%, 84%);
+  width: 200%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
 }
 
 #sign{
-  height: 50px;
+  height: 60%;
   float: right;
+  margin:20px 0px;
+}
+
+#store-sales{
+  margin: auto;
+  margin-top: 60px;
+  width: 75%;
+	border: 1px solid rgb(0, 0, 255);
+  color: rgb(1, 0, 4);
+  font-size: large;
+}
+
+#familyPic{
+  float: right;
+  display: flex;
+  size: 50%;
+  /* height: 300px; */
+  width: 40%;
+  height: auto;
+  margin: 30px;
+}
+
+p{
+  padding: 20px;
+  /* line-height: 20px; */
+  /* border: 2px solid black; */
+  
+
+}
+#fSalmon{
+  width: 50px;
+}
+#formInput{
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  flex-direction: column;
+  width: 75%;
+  
 }
