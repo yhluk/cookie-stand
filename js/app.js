@@ -32,7 +32,7 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 
 
 
-// * * * * * * * PROTOTYPE METHODS * * * * * * * * * *
+// * * * * * * * PROTOTYPE METHODS * * * * * * * * * ** * * * * ** * * * * ** * * * * ** * * * * *
 
 
 City.prototype.customerPerHour = function(){
@@ -48,8 +48,8 @@ City.prototype.generateCookieSold = function(){
     this.total += cookies;
   }
 };
-// console.log(totalCookiesPerHour);
-//***********Renderr*************** */
+
+//***********Renderr*************** */*********** */*********** */*****/*/*/*/*/*/**/*/*/*/*/*/*
 
 function header(){ /*****stand alone function */
 
@@ -87,7 +87,7 @@ City.prototype.render = function () {
     tr.appendChild(td);
   }
 
-  // ************* apppend total per city******
+  // ************* apppend total per city************************************************************
 
   let total = 0;
   for (let i = 0; i < this.cookieSold.length; i++) 
@@ -110,10 +110,10 @@ for (const i in cityArray) {
   city.generateCookieSold();
   city.render();
 }
-//*******footer total for table */
+//*******footer total for table ***************************************************************/
 
 
-// const totalPerHour = [];
+
 
 function tableFooter(){
   let footerTr = document.createElement('tr');
@@ -123,10 +123,7 @@ function tableFooter(){
   footerTh.textContent = 'Total P/H';
   footerTr.appendChild(footerTh);
 
-
   const totalPerHourArray = [];
-  // let totalPerHour = 0;
-
 
   for (let i = 0; i < hours.length; i++) 
   {
@@ -155,9 +152,10 @@ function tableFooter(){
   footerTh.textContent = totalTotalFinal;
   footerTr.appendChild(footerTh);
 }
-tableFooter();
 
-//******adding event handler */
+
+
+//******adding event handler */*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/*/
 
 function handleSubmit(event){
   event.preventDefault();
@@ -172,17 +170,20 @@ function handleSubmit(event){
 
   let newCity = new City(addCity, addCityMin, addCityMax, addCityAvg);
 
+  cityArray.push(newCity);
 
-  //********************calling for new city */
 
+  //********************calling for new city */*/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*/*/**/*/*/*/*
+  storeSales.deleteRow(-1);
   newCity.generateCookieSold();
   newCity.render();
 
+  tableFooter();
 
   newCityForm.reset();
 
 }
-
+tableFooter();
 
 
 
